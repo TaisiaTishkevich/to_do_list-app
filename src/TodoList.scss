@@ -1,0 +1,209 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3f5057;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .input-cont {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba($color: #3f5057, $alpha: 0.1);
+    border-radius: 20px;
+    padding: 10px 40px;
+
+    .input-block {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      input {
+        width: 45%;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 10px;
+        border: 1px solid #3f5057;
+        background: none;
+        outline: none;
+        background: none;
+        color: #3f5057;
+        font-size: 16px; /* Размер шрифта */
+      }
+      input::placeholder {
+        color: #3f5057;
+      }
+
+      input:hover {
+        border-color: #999;
+      }
+
+      input:focus {
+        border-color: #555;
+        box-shadow: 0 0 4px rgba(85, 85, 85, 0.5);
+      }
+
+      button {
+        width: 35px;
+        height: 35px;
+        margin-right: 25px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #c7f335;
+        border-radius: 10px;
+        background: #c7f335;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      button:hover {
+        border-color: #999;
+      }
+
+      button:focus {
+        border-color: #555;
+        box-shadow: 0 0 4px rgba(85, 85, 85, 0.5);
+      }
+    }
+
+    select {
+      width: 200px;
+      height: 40px;
+      padding: 4px 8px;
+      border: 1px solid #c7f335;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #c7f335;
+      color: #3f5057;
+      outline: none;
+
+      option {
+        background-color: #fff;
+        color: #000;
+        padding: 8px;
+        font-size: 16px;
+      }
+    }
+
+    select:hover {
+      border-color: #999;
+    }
+
+    select:focus {
+      border-color: #555;
+      box-shadow: 0 0 4px rgba(85, 85, 85, 0.5);
+    }
+  }
+
+  .main-cont {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+
+    .list-cont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .list-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+
+        li {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          height: 30px;
+          font-size: 20px;
+          padding: 10px 15px;
+          background: rgba($color: #3f5057, $alpha: 0.1);
+          border-radius: 10px;
+          margin: 0;
+          margin-bottom: 15px;
+
+          .deleted {
+            margin: 0;
+            text-decoration: line-through;
+          }
+
+          .btns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            button {
+              width: 35px;
+              height: 35px;
+              margin-right: 2px;
+              margin-left: 2px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 10px;
+
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+
+            .check {
+              background-color: #c7f335;
+              border: 1px solid #3f5057;
+            }
+
+            .delete {
+              background-color: #f2361d;
+              border: 1px solid #3f5057;
+            }
+
+            .active {
+              background-color: #c7f335;
+              border: 1px solid #3f5057;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+
+            .delayed {
+              background-color: #f2d729;
+              border: 1px solid #3f5057;
+            }
+          }
+        }
+      }
+    }
+  }
+}
